@@ -30,10 +30,11 @@ int main() {
 	//Declaring the object for creating and writing to a file
 	fstream inventory("inventory.txt");
 	//Menu function that allows user to select the case they'd like to open.
+	while(menuChoice != 4){
 	displayMenu(menuChoice);
 	//Seed generation for random number function
 	srand(time(0));
-	switch (menuChoice) {
+	switch (menuChoice){
 	case 1:
 	{
 		openFracture(inventory);
@@ -47,14 +48,22 @@ int main() {
 	case 3:
 	{
 		openSnakebite(inventory);
+		break;
+	}
+	case 4:
+	{
+	    cout << "Goodbye!";
+	    break;
+	}
+	}
+    
 	}
 	return 0;
-	}
 }
 //This function displays the menu with cases for the user to open and allows the user to enter their choice of case.
 void displayMenu(int &menuChoice){
-	cout << "Please select the case you'd like to open below.\n";
-	cout << " 1. Fracture Case\n 2. Operation Broken Fang Case\n 3. Snakebite Case\n";
+	cout << "\nPlease select the case you'd like to open below.\n";
+	cout << " 1. Fracture Case\n 2. Operation Broken Fang Case\n 3. Snakebite Case\n 4. Quit\n";
 	cin >> menuChoice;
 }
 //Function declaration of fracture case opening with different functions based 
