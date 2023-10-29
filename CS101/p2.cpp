@@ -1,3 +1,11 @@
+/*This project involves implementing the mergesort sorting algorithm in a slightly
+modified manner that utilizes a file of integers that specifiy what indicies of a 
+digit or string to use for comparisions. For an int, index 0 represents the ones
+place digit, index 1 represents the tens place digit, and so on. 
+For a string, the index represents the traditional index of the string
+This version of mergesort is stable and runs in O(n lg n). The data is outputted
+fixed right with a column width of ten for integers, and on a newline separated list 
+of values for strings.*/
 #include <iostream> 
 #include <fstream>
 #include <cstdlib>
