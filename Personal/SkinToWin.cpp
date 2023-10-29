@@ -1,3 +1,4 @@
+/*A project from the summer before freshmen year of college that simulates the process of opening CS:GO cases in a simple console program*/
 #include <iostream>
 #include <cstdlib>
 #include <string>
