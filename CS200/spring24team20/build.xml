@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ChocAn" default="compile">
+    <target name="clean">
+        <delete dir="classes/"/>
+    </target>
+    <target name="clobber" depends="clean">
+        <delete file="chocAn.jar"/>
+    </target>
+    <target name="compile">
+        <mkdir dir="classes"/>
+        <javac srcdir="src" destdir="classes"/>
+    </target>
+    <target name="jar" depends="compile">
+        <jar destfile="release/chocAn.jar">
+            <fileset dir="classes" includes="**/*.class"/>
+            <manifest>
+                <attribute name="Main-Class" value="Main"/>
+            </manifest>
+        </jar>
+    </target>
+</project>

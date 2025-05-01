@@ -1,0 +1,65 @@
+#Project_title {
+    text-align: center;
+    color: crimson;
+}
+
+.table {
+    border: 3px solid black;
+}
+
+.cell {
+    border: 1px solid black;
+    padding: 0px 10px 0px 5px;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.Glossaryblock{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.Glossary{
+    background-color: grey;
+    border: 1px solid white;
+    color: white;
+    padding: 0px 10px 0px 10px;
+    list-style-type: disc;
+}
+
+.Entry {
+    background-color: lightgray;
+    border: 1px solid white;
+    padding: 0px 10px 0px 5px;
+
+}
+
+.Paragraph {
+    display: flex; 
+    margin: 0% 15% 0% 15%; 
+    padding: 5px 10px 5px 10px;
+    border: 1px solid black; 
+    background-color: rgb(242, 242, 242);
+}
+
+.Use_Case {
+    justify-content: space-evenly;
+    display: inline-block;
+    margin: 0 auto 0 auto;
+    width: 32%;
+    height: 725px;
+    border: 1px solid black;
+    background-color: rgb(242, 242, 242);
+}
+.Use_Case_Text {
+    padding: 5px 10px 0px 10px;
+}
